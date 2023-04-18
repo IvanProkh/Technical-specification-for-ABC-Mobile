@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IQ test</title>
+    <title>IQ test - Mobile app</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -24,37 +26,15 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <div class="container header-div">
-        <ul class="navigator">
-          <li class="iteam"><a class="navigator-link current" href="./index.html">ГЛАВНАЯ</a></li>
-          <li class="iteam">
-            <a class="navigator-link" href="./testIQ.html">ИНФОРМАЦИЯ О ТЕСТЕ</a>
-          </li>
-          <li class="iteam"><a class="navigator-link" href="#">ПРОЙТИ ТЕСТ</a></li>
-        </ul>
-        <ul class="contacts">
-          <li class="iteam">
-            <a class="contact" href="mailto:info@devstudio.com">
-              <svg class="webpost">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="iteam">
-            <a class="contact" href="tel:+380961111111">
-              <svg class="smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
+    <header class="header container">
+      <ul class="navigator">
+        <li class="iteam"><a class="current" href="./index.html">ГЛАВНАЯ</a></li>
+        <li class="iteam">
+          <a class="navigator-link" href="./testIQ.html">ИНФОРМАЦИЯ О ТЕСТЕ</a>
+        </li>
+        <li class="iteam"><a class="navigator-link" href="./testIQ.html">ПРОЙТИ ТЕСТ</a></li>
+      </ul>
     </header>
-
-    <!-- <hr class="line">  -->
 
     <main class="main">
       <!-- Секции, эффективные решения -->
@@ -62,6 +42,8 @@
       <!-- Наши преимущества -->
     </main>
 
-    <footer class="footer-section"></footer>
+    <footer class="footer"></footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
