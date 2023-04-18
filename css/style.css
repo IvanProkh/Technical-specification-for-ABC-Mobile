@@ -1,9 +1,11 @@
 :root {
-  --theme-color: #2196f3;
+  --theme-color: #ffc700;
   --second-color: #ffffff;
+
   --logostudio-color: #000000;
 
-  --background-first: #2f303a;
+  --background-first: #181818;
+
   --background-section-list: #e5e5e5;
   --background-third: #f5f4fa;
 
@@ -12,7 +14,9 @@
   --text-third: rgba(255, 255, 255, 0.6);
 
   --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --secondary-font: 'Yeseva One', sans-serif;
+  --secondary-font: 'Merriweather', sans-serif;
+  --secondary-font: 'PT Serif', sans-serif;
 
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
