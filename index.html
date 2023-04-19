@@ -26,25 +26,81 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="container">
-      <ul class="navigator">
-        <li class="navigator__iteam"><a class="current" href="./index.html">ГЛАВНАЯ</a></li>
-        <li class="navigator__iteam">
-          <a class="navigator-link" href="./testIQ.html">ИНФОРМАЦИЯ О ТЕСТЕ</a>
-        </li>
-        <li class="navigator__iteam">
-          <a class="navigator-link" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
-        </li>
-      </ul>
+    <header class="header container">
+      <button class="header__burger-btn data-menu-button">
+        <img src="./images/svg/menu.svg" />
+      </button>
+
+      <img src="./images/svg/cross.svg" />
+      <nav class="menu data-menu">
+        <ul class="menu__list">
+          <li class="menu__iteam">
+            <a class="menu__link" href="./index.html">ГЛАВНАЯ</a>
+          </li>
+          <li class="menu__iteam">
+            <a class="menu__link" href="#">ИНФОРМАЦИЯ О ТЕСТЕ</a>
+          </li>
+          <li class="menu__iteam">
+            <a class="menu__link" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-      <!-- Секции, эффективные решения -->
+      <!-- Секция, Hero -->
+      <section class="hero container">
+        <div class="hero__content">
+          <p class="hero__pre-title">Пройдите точный и быстрый</p>
+          <h1 class="hero__title">ТЕСТ НА ОПРЕДЕЛЕНИЕ IQ</h1>
+          <button class="hero__button button-active" type="button">ПРОЙТИ ТЕСТ</button>
+          <p class="hero__text">
+            И получите рекомендации по развитию своего интеллекта и улучшению финансового
+            благосостояния и личной жизни
+          </p>
+          <button class="hero__button-dropdown">
+            <img src="./images/svg/arrow.svg" />
+            <p>Подробнее</p>
+          </button>
+        </div>
+      </section>
 
-      <!-- Наши преимущества -->
+      <!-- Секция, Подробнее -->
+      <section class="information container">
+        <div class="information__content-glow">
+          <img src="./images/svg/quotes up.svg" />
+          <p class="information__text-glow">
+            Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта,
+            но и выработать список рекомендаций для повышения этого показателя.
+          </p>
+          <img src="./images/svg/quotes down.svg" />
+        </div>
+        <div class="information__content-brain">
+          <p class="information__text-brain">
+            Также по результатам теста вы получите подробные советы по определению наиболее
+            перспективной для вашего типа интеллекта сферы деятельности, которая принесет вам
+            скорейший финансовый результат.
+          </p>
+          <img src="./images/brain_img.png" alt="Picture of the brain" />
+          <button class="information__button button-active">ПРОЙТИ ТЕСТ</button>
+        </div>
+        <div class="information__content-lightning">
+          <p class="information__text-lightning">
+            Прохождение теста займет у вас не более 12 минут, а его результаты вы сможете
+            использовать всю жизнь.
+          </p>
+          <p class="information__text-lightning">
+            Профессиональная интерпретация и детально проработанные рекомендации позволят вам
+            качественно изменить все аспекты своей жизни: от финансового до любовного.
+          </p>
+          <button class="information__button-lightning button-active">ПРОЙТИ ТЕСТ</button>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__copyright">©️ 2019</p>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>

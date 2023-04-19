@@ -52,8 +52,30 @@ a {
 }
 
 button {
-  font-family: inherit;
+  border: none;
   transition: color var(--transition), background-color var(--transition);
+}
+
+.button-not-active {
+  background: var(--background-button);
+  color: var(--text-button);
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-active {
+  width: 189px;
+  height: 41px;
+  font-family: var(--font-text-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+
+  background: var(--background-button-active);
+  color: var(--text-button-active);
+  box-shadow: none;
 }
 
 ul {
@@ -67,47 +89,88 @@ body {
   /* letter-spacing: 0.03em; */
   /* color: var(--text-primary); */
   background-color: #e5e5e5;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 @media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-    padding: 0px 15px;
-    margin: 0 auto;
-  }
 }
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+/* =========== HEADER =========== */
 
 header {
   background: var(--background-first);
 }
 
-/* 
-.section-padding-bottom {
-  padding-bottom: 94px;
-} */
+.header.open .menu {
+  transform: translateX(100%);
+}
 
-/* =========== HEADER =========== */
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 320px;
+  background: var(--background-first);
+  padding: 110px 100px 348px 23px;
 
-.navigator {
+  transition: var(--transition);
+}
+
+.menu__list {
+  display: block;
+}
+.menu__iteam {
+  margin-top: 27px;
+}
+
+.menu__link {
+  max-width: 197px;
+  padding: 10px 0px;
+  color: var(--text-primary);
+}
+
+.menu__link:hover {
+  color: var(--theme-color);
+}
+
+.header__burger-btn {
+  position: relative;
+  border: none;
+  background: none;
+  z-index: 2;
+}
+
+/* =========== HERO =========== */
+
+.hero__content {
   display: flex;
-  align-items: baseline;
-  /* background-color: #e5e5e5; */
-  height: 569px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/Starry_sky_hero_bg.png');
+  background-size: cover;
+  background-position: center;
 }
 
-/* header {
-  border-bottom: 1px solid #ececec;
+/* .hero {
 }
-
-.container .iteam:not(:last-child) {
-  margin-right: 50px;
+.container {
 }
-
-.header-div {
-  display: flex;
-  align-items: baseline;
+.hero__pre-title {
+}
+.hero__title {
+}
+.hero__button {
+}
+.hero__text {
+}
+.hero__button-dropdown {
 } */
