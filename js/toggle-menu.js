@@ -1,13 +1,5 @@
-(() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
-
-  menuBtnRef.addEventListener('click', () => {
-    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || 'false';
-
-    menuBtnRef.classList.toggle('open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-
-    mobileMenuRef.classList.toggle('open');
-  });
-})();
+function toggleMenu() {
+  document.getElementsByClassName('header')[0].classList.toggle('close-menu');
+  // document.getElementsByClassName('burger-btn__open')[0].classList.toggle('hidden');
+  document.getElementsByClassName('burger-btn__close')[0].classList.toggle('hidden');
+}
