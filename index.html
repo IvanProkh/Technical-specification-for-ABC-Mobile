@@ -26,13 +26,13 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header container">
-      <button class="header__burger-btn data-menu-button">
-        <img src="./images/svg/menu.svg" />
+    <header class="header container close-menu">
+      <button class="burger-btn">
+        <img class="burger-btn__open" src="./images/svg/menu.svg" onclick="toggleMenu()" />
+        <img class="burger-btn__close hidden" src="./images/svg/cross.svg" onclick="toggleMenu()" />
       </button>
 
-      <img src="./images/svg/cross.svg" />
-      <nav class="menu data-menu">
+      <nav class="menu">
         <ul class="menu__list">
           <li class="menu__iteam">
             <a class="menu__link" href="./index.html">ГЛАВНАЯ</a>
@@ -52,11 +52,12 @@
       <section class="hero container">
         <div class="hero__content">
           <p class="hero__pre-title">Пройдите точный и быстрый</p>
-          <h1 class="hero__title">ТЕСТ НА ОПРЕДЕЛЕНИЕ IQ</h1>
+          <h1 class="hero__title">ТЕСТ НА ОПРЕДЕЛЕНИЕ <br />IQ</h1>
           <button class="hero__button button-active" type="button">ПРОЙТИ ТЕСТ</button>
           <p class="hero__text">
-            И получите рекомендации по развитию своего интеллекта и улучшению финансового
-            благосостояния и личной жизни
+            И получите рекомендации по развитию своего интеллекта
+            <br />
+            <span>и улучшению финансового благосостояния и личной жизни</span>
           </p>
           <button class="hero__button-dropdown">
             <img src="./images/svg/arrow.svg" />
@@ -103,5 +104,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/toggle-menu.js"></script>
   </body>
 </html>
