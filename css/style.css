@@ -245,4 +245,78 @@ header {
   color: var(--text-primary);
 }
 
-/* ===========  =========== */
+/* =========== INFO =========== */
+
+.info {
+}
+
+.info__content-glow {
+  height: 339px;
+  background: url('../images/Blue_Stain.png'), url('../images/glow_bg.png');
+}
+
+.info__quotes-up {
+  position: relative;
+  top: 43px;
+  left: 24px;
+}
+
+.info__text-glow {
+  margin-top: 60px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--text-primary);
+}
+
+.info__quotes-down {
+  position: relative;
+  left: 270px;
+}
+
+.info__content-brain {
+  position: relative;
+  height: 511px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--text-primary);
+}
+
+.info__text-brain {
+  padding: 38px 11px;
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+
+  color: var(--text-first);
+}
+
+.info__text-brain span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info__img-brain {
+  position: absolute;
+  top: 256px;
+  left: 44px;
+}
+
+.info__button {
+  margin-top: 162px;
+}
+
+.info__content-lightning {
+  background-image: url('../images/Starry_sky_bg.png');
+}
+.info__text-lightning {
+}
+.info__button-lightning {
+}
