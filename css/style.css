@@ -12,7 +12,6 @@
   --background-table: #1c2741;
 
   --text-primary: #ffffff;
-  /* --text-secondary: #ffc700; */
 
   --text-navigate: #f4ce0c;
 
@@ -243,11 +242,27 @@ header {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--text-primary);
+
+  transition: transform var(--transition);
+}
+
+.hero__button-dropdown:hover img {
+  transform: rotate(180deg);
+}
+
+.hero__button-dropdown:hover {
+  font-weight: 700;
 }
 
 /* =========== INFO =========== */
 
 .info {
+  transition: opacity var(--transition), transition var(--transition);
+}
+
+.info.close-info {
+  transform: translateY(-150%);
+  opacity: 0;
 }
 
 .info__content-glow {
@@ -314,9 +329,61 @@ header {
 }
 
 .info__content-lightning {
+  height: 533px;
+  overflow: hidden;
   background-image: url('../images/Starry_sky_bg.png');
 }
-.info__text-lightning {
+
+.info__pretext-lightning {
+  padding: 56px 51px 14px 14px;
+  font-family: var(--font-text-secondary);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+
+  color: var(--text-primary);
 }
+
+.info__pretext-lightning span {
+  color: var(--theme-color);
+}
+
+.info__text-lightning {
+  margin: 0px 12px 30px 12px;
+  padding: 30px 0px 30px 14px;
+  font-family: var(--font-text-secondary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+
+  color: var(--text-second);
+
+  background: rgba(243, 243, 242, 0.8);
+  border-radius: 20px;
+}
+
+.info__text-lightning span {
+  font-weight: 700;
+}
+
 .info__button-lightning {
+  margin: 0 64px;
+  background: none;
+  color: var(--text-primary);
+
+  border: 1px solid var(--text-primary);
+}
+
+.info__copyright {
+  margin-top: 52px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: rgba(255, 255, 255, 0.5);
 }
