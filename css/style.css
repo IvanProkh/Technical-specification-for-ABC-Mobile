@@ -113,6 +113,7 @@ header {
   background: var(--background-first);
   width: 100%;
   height: 46px;
+  z-index: 2;
 }
 
 .header.close-menu .menu {
@@ -170,7 +171,7 @@ header {
 
   /* fill: var(--text-primary); */
   transition: opacity var(--transition), transition var(--transition);
-  z-index: 2;
+  z-index: 1;
 }
 
 /* .burger-btn__close:hover {
@@ -185,10 +186,12 @@ header {
 /* =========== HERO =========== */
 
 .hero {
+  position: relative;
   height: 522px;
   background-image: url('../images/Starry_sky_hero_bg.png');
   background-size: cover;
   background-position: left top;
+  z-index: 1;
 }
 
 .hero__content {
@@ -252,18 +255,23 @@ header {
   transition: transform var(--transition);
 }
 
-.hero__button-dropdown:hover img {
+.hero__button-dropdown img {
   transform: rotate(180deg);
 }
 
-.hero__button-dropdown:hover {
-  font-weight: 700;
+.hero__button-dropdown.active img {
+  transform: rotate(0deg);
 }
+
+/* .hero__button-dropdown:hover {
+  font-weight: 700;
+} */
 
 /* =========== INFO =========== */
 
 .info {
-  transition: opacity var(--transition), transition var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
+  z-index: 0;
 }
 
 .info.close-info {
