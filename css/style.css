@@ -62,13 +62,16 @@ button {
 }
 
 .button-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 189px;
   height: 41px;
   font-family: var(--font-text-secondary);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   letter-spacing: 0.1em;
   border-radius: 20px;
 
@@ -85,11 +88,10 @@ ul {
 body {
   font-family: var(--font-primary), sans-serif;
   background-color: #e5e5e5;
-  /* height: 100vh; */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 @media (min-width: 320px) {
@@ -100,11 +102,9 @@ body {
   margin: 0 auto;
 }
 
-/* main {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-} */
+.wrapper {
+  overflow: hidden;
+}
 
 /* =========== HEADER =========== */
 
@@ -158,10 +158,10 @@ header {
 
 .burger-btn__open {
   position: relative;
-  top: 17px;
-  left: 15px;
+  top: 12px;
+  left: 10px;
   /* margin: 17px 0px 13px 15px; */
-  /* padding: 5px; */
+  padding: 5px;
 }
 
 .burger-btn__close {
@@ -225,6 +225,9 @@ header {
 
 .hero__button {
   margin-bottom: 22px;
+  /* display: flex;
+  justify-content: center; */
+  /* text-align: center; */
 }
 
 .hero__text {
@@ -275,8 +278,9 @@ header {
 }
 
 .info.close-info {
-  transform: translateY(-150%);
+  transform: translateY(-100%);
   opacity: 0;
+  /* display: none; */
 }
 
 .info__content-glow {
