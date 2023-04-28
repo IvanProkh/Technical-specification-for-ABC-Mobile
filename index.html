@@ -25,35 +25,40 @@
   </head>
 
   <body>
-    <!-- Шапка сайта -->
-    <header class="header container close-menu">
-      <button class="burger-btn">
-        <img class="burger-btn__open" src="./images/svg/menu.svg" onclick="toggleMenu()" />
-        <img class="burger-btn__close hidden" src="./images/svg/cross.svg" onclick="toggleMenu()" />
-      </button>
+    <div class="wrapper">
+      <!-- Шапка сайта -->
+      <header class="header container close-menu">
+        <button class="burger-btn">
+          <img class="burger-btn__open" src="./images/svg/menu.svg" onclick="toggleMenu()" />
+          <img
+            class="burger-btn__close hidden"
+            src="./images/svg/cross.svg"
+            onclick="toggleMenu()"
+          />
+        </button>
 
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__iteam">
-            <a class="menu__link" href="./index.html">ГЛАВНАЯ</a>
-          </li>
-          <li class="menu__iteam">
-            <a class="menu__link" href="#">ИНФОРМАЦИЯ О ТЕСТЕ</a>
-          </li>
-          <li class="menu__iteam">
-            <a class="menu__link" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__iteam">
+              <a class="menu__link" href="./index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="menu__iteam">
+              <a class="menu__link" href="#">ИНФОРМАЦИЯ О ТЕСТЕ</a>
+            </li>
+            <li class="menu__iteam">
+              <a class="menu__link" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="main">
+      <!-- <main class="main"> -->
       <!-- Секция, Hero -->
       <section class="hero container">
         <div class="hero__content">
           <p class="hero__pre-title">Пройдите точный и быстрый</p>
           <h1 class="hero__title">ТЕСТ НА ОПРЕДЕЛЕНИЕ <br />IQ</h1>
-          <button class="hero__button button-active" type="button">ПРОЙТИ ТЕСТ</button>
+          <a class="hero__button button-active" type="button" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
           <p class="hero__text">
             И получите рекомендации по развитию своего интеллекта
             <br />
@@ -97,7 +102,7 @@
             которая принесет вам скорейший финансовый результат.
           </p>
           <img class="info__img-brain" src="./images/brain_img.png" alt="Picture of the brain" />
-          <button class="info__button button-active">ПРОЙТИ ТЕСТ</button>
+          <a class="info__button button-active" type="button" href="./testIQ.html">ПРОЙТИ ТЕСТ</a>
         </div>
         <div class="info__content-lightning">
           <p class="info__pretext-lightning">
@@ -122,11 +127,14 @@
             от <br />
             финансового до любовного.
           </p>
-          <button class="info__button-lightning button-active">ПРОЙТИ ТЕСТ</button>
+          <a class="info__button-lightning button-active" type="button" href="./testIQ.html"
+            >ПРОЙТИ ТЕСТ</a
+          >
           <p class="info__copyright">©️ 2019</p>
         </div>
       </section>
-    </main>
+      <!-- </main> -->
+    </div>
 
     <footer class="footer"></footer>
 
