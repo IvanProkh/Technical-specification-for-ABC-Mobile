@@ -94,8 +94,8 @@ body {
   align-items: center;
 }
 
-@media (min-width: 320px) {
-}
+/* @media (min-width: 320px) {
+} */
 
 .container {
   max-width: 320px;
@@ -170,12 +170,13 @@ header {
   top: 18px;
 
   /* fill: var(--text-primary); */
-  transition: opacity var(--transition), transition var(--transition);
+  transition: transition var(--transition);
   z-index: 1;
 }
 
-/* .burger-btn__close:hover {
-  fill: var(--theme-color);
+/* .burger-btn__close:hover,
+:focus {
+  fill:; 
 } */
 
 .burger-btn__close.hidden {
