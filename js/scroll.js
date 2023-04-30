@@ -15,8 +15,6 @@ window.addEventListener('scroll', () => {
     prevScrollPos = currentScrollPos;
   }
 
-  console.log(!button.classList.contains('active'), 'dsdd');
-
   window.addEventListener('click', () => {
     if (!button.classList.contains('active') && currentScrollPos > 0) {
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
