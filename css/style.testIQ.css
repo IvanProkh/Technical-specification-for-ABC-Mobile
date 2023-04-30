@@ -1,0 +1,41 @@
+.title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  top: 0;
+  left: 48px;
+}
+
+.title__text {
+  margin-left: 9px;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+
+  color: var(--theme-color);
+}
+
+main {
+  height: 522px;
+  width: 320px;
+
+  background: url(../images/Starry_sky_bg.png);
+  /* overflow: hidden; */
+}
+
+.scale {
+  height: 45px;
+  width: 100%;
+  background: red;
+}
+
+.test {
+  height: 386px;
+}
+
+.next-card {
+  margin: 25px auto;
+}

@@ -22,11 +22,12 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.testIQ.css" />
   </head>
 
   <body>
     <!-- Шапка сайта -->
-
+    <!-- <div class="wrapper"> -->
     <header class="header container close-menu">
       <button class="burger-btn">
         <img class="burger-btn__open" src="./images/svg/menu.svg" onclick="toggleMenu()" />
@@ -34,7 +35,7 @@
       </button>
 
       <div class="title">
-        <img class="title__img" src="./images/brain_header.png" />
+        <img class="title__img" src="./images/brain_header.png" width="48" height="47" />
         <p class="title__text">ТЕСТ НА ОПРЕДЕЛЕНИЕ IQ</p>
       </div>
 
@@ -56,9 +57,21 @@
     <main class="main">
       <div class="scale"></div>
 
-      <section class="test"></section>
+      <section class="test">
+        <div class="test-1">
+          <p class="test__title">Ваш пол:</p>
+          <label>
+            <input type="radio" name="test-1" value="option1" />
+            Мужчина
+          </label>
+          <label>
+            <input type="radio" name="test-1" value="option2" />
+            Женщина
+          </label>
+        </div>
+      </section>
 
-      <section class="processing">
+      <!-- <section class="processing">
         <p class="processing__title">Обработка результатов</p>
 
         <p class="processing__text">
@@ -66,9 +79,11 @@
           ...................................................
         </p>
       </section>
-      <section class="final-page"></section>
-    </main>
+      <section class="final-page"></section> -->
 
+      <button class="next-card button-active">ДАЛЕЕ</button>
+    </main>
+    <!-- </div> -->
     <script src="./js/script.js"></script>
     <script src="./js/toggle-menu.js"></script>
   </body>
